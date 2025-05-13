@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Student;
 use App\Models\Course;
 use App\Models\Enrolment;
+use App\Enums\CompletionStatus;
 
 class EnrolmentSeeder extends Seeder
 {
@@ -19,11 +20,23 @@ class EnrolmentSeeder extends Seeder
 
         $courses = Course::factory()->count(5)->create();
 
-        $enrolments = Enrolment::factory()
-                        ->recycle($students)
-                        ->recycle($courses)
-                        ->count(30)
-                        ->create();
+        $completed_enrolments = Enrolment::factory()
+                                    ->recycle($students)
+                                    ->recycle($courses)
+                                    ->count(15)
+                                    ->create(['status' => CompletionStatus::COMPLETED]);
+
+        $enrolled_enrolments = Enrolment::factory()
+                                    ->recycle($students)
+                                    ->recycle($courses)
+                                    ->count(10)
+                                    ->create(['status' => CompletionStatus::ENROLLED]);
+
+        $failed_enrolments = Enrolment::factory()
+                                    ->recycle($students)
+                                    ->recycle($courses)
+                                    ->count(5)
+                                    ->create(['status' => CompletionStatus::FAILED]);
 
         foreach($students as $student){
             echo $student;
@@ -34,7 +47,15 @@ class EnrolmentSeeder extends Seeder
             echo $course;
             echo "\n";
         }
-        foreach($enrolments as $enrolment){
+        foreach($completed_enrolments as $enrolment){
+            echo $enrolment;
+            echo "\n";
+        }
+        foreach($enrolled_enrolments as $enrolment){
+            echo $enrolment;
+            echo "\n";
+        }
+        foreach($failed_enrolments as $enrolment){
             echo $enrolment;
             echo "\n";
         }
