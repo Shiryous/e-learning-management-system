@@ -6,7 +6,7 @@ This project is a simple Laravel e-learning management system REST API using [La
 
 ## Database schema
 ![alt text](ER_diagram.png)
-This is an API for an  implemented with the laravel PHP framework. There are 3 entities inside the database:
+There are 3 entities inside the database:
 
 1. Students
 2. Courses
