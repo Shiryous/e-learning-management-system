@@ -23,7 +23,7 @@ There are 3 entities inside the database:
 
 ```bash
 git clone https://github.com/Shiryous/e-learning-management-system.git
-cd your-laravel-project
+cd e-learning-management-s
 ```
 
 ### 2. Copy the `.env` file
