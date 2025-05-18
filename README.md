@@ -81,7 +81,10 @@ DB_PASSWORD=password
 sail artisan migrate
 ```
 
-
+### 7. Seed Database
+```bash
+sail artisan db:seed
+```
 ## Testing the API
 
 You can test the endpoints with [Postman](https://www.postman.com/).
