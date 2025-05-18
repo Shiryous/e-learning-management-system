@@ -30,7 +30,7 @@ This project is a simple Laravel REST API using [Laravel Sail](https://laravel.c
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-laravel-project.git
+git clone https://github.com/Shiryous/e-learning-management-system.git
 cd your-laravel-project
 ```
 
