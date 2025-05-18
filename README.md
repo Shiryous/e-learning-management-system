@@ -1,21 +1,16 @@
-# E-learning Management System API
+# Laravel E-Learning Management System RESTful API with Sail + PostgreSQL
 
-This is an API for an e-learning management system implemented with the laravel PHP framework. There are 3 entities inside the database:
+This project is a simple Laravel e-learning management system REST API using [Laravel Sail](https://laravel.com/docs/sail), the official Laravel Docker development environment. It includes PostgreSQL, and is ready to get up and running with minimal setup.
+
+---
+
+## Database schema
+![alt text](ER_diagram.png)
+This is an API for an  implemented with the laravel PHP framework. There are 3 entities inside the database:
 
 1. Students
 2. Courses
 3. Enrolments/Completions
-
-## Database schema
-![alt text](ER_diagram.png)
-
-# Get Started
-
-# 🚀 Laravel RESTful API with Sail + PostgreSQL
-
-This project is a simple Laravel REST API using [Laravel Sail](https://laravel.com/docs/sail), the official Laravel Docker development environment. It includes PostgreSQL, and is ready to get up and running with minimal setup.
-
----
 
 ## 🛠 Requirements
 
@@ -97,11 +92,9 @@ sail artisan migrate
 
 ---
 
-## 🧪 Testing the API
+## Testing the API
 
-You can test your endpoints with:
-
-- [Postman](https://www.postman.com/)
+You can test the endpoints with [Postman](https://www.postman.com/).
 
 Example base URL:
 
@@ -109,9 +102,8 @@ Example base URL:
 http://localhost/api/...
 ```
 
----
 
-## 🐳 Useful Sail Commands
+## Useful Sail Commands
 
 ```bash
 sail artisan migrate          # Run DB migrations
@@ -120,17 +112,6 @@ sail artisan test             # Run tests
 sail down                     # Stop the containers
 ```
 
----
-
-## 📂 Project Structure
-
-This project follows a typical Laravel API structure:
-- `routes/api.php` – Your API endpoints
-- `app/Models` – Eloquent models
-- `app/Http/Controllers` – API controllers
-- `database/migrations` – DB schema
-- `docker-compose.yml` – Sail services setup
-
 ## 📄 License
 
-MIT License.
+This project is open-sourced under the [MIT license](LICENSE).
