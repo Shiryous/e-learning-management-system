@@ -38,26 +38,27 @@ class EnrolmentSeeder extends Seeder
                                     ->count(5)
                                     ->create(['status' => CompletionStatus::FAILED]);
 
-        foreach($students as $student){
-            echo $student;
-            echo "\n";
-        }
+        // foreach($students as $student){
+        //     echo $student;
+        //     echo "\n";
+        // }
 
-        foreach($courses as $course){
-            echo $course;
-            echo "\n";
-        }
-        foreach($completed_enrolments as $enrolment){
-            echo $enrolment;
-            echo "\n";
-        }
-        foreach($enrolled_enrolments as $enrolment){
-            echo $enrolment;
-            echo "\n";
-        }
-        foreach($failed_enrolments as $enrolment){
-            echo $enrolment;
-            echo "\n";
-        }
+        // foreach($courses as $course){
+        //     echo $course;
+        //     echo "\n";
+        // }
+        // foreach($completed_enrolments as $enrolment){
+        //     echo $enrolment;
+        //     echo "\n";
+        // }
+        // foreach($enrolled_enrolments as $enrolment){
+        //     echo $enrolment;
+        //     echo "\n";
+        // }
+        // foreach($failed_enrolments as $enrolment){
+        //     echo $enrolment;
+        //     echo "\n";
+        // }
+        echo "Database is seeded successfully!";
     }
 }
