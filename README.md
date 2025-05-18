@@ -2,8 +2,6 @@
 
 This project is a simple Laravel e-learning management system REST API using [Laravel Sail](https://laravel.com/docs/sail), the official Laravel Docker development environment. It includes PostgreSQL, and is ready to get up and running with minimal setup.
 
----
-
 ## Database schema
 ![alt text](ER_diagram.png)
 There are 3 entities inside the database:
@@ -18,7 +16,6 @@ There are 3 entities inside the database:
 - Git
 - Optional: [Composer](https://getcomposer.org/) if you're managing dependencies manually
 
----
 
 ## 🚀 Getting Started
 
@@ -59,15 +56,11 @@ If you get a permission error, try:
 chmod +x vendor/bin/sail
 ```
 
----
-
 ### 4. Generate App Key
 
 ```bash
-./vendor/bin/sail artisan key:generate
+sail artisan key:generate
 ```
-
----
 
 ### 5. Configure the Database
 
@@ -82,15 +75,12 @@ DB_USERNAME=sail
 DB_PASSWORD=password
 ```
 
----
-
 ### 6. Run Migrations
 
 ```bash
 sail artisan migrate
 ```
 
----
 
 ## Testing the API
 
