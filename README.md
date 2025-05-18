@@ -38,7 +38,13 @@ Install PHP and Sail if not installed yet (optional):
 sudo apt update && sudo apt install php-cli unzip curl git php-mbstring php-xml php-bcmath php-curl -y
 ```
 ```bash
-composer install
+docker run --rm \
+-u "$(id -u):$(id -g)" \
+-v "$(pwd):/var/www/html" \
+-w /var/www/html \
+laravelsail/php84-composer:latest \
+composer install --ignore-platform-reqs
+
 ```
 Make an alias to simplify commands
 ```bash
@@ -77,7 +83,9 @@ DB_PASSWORD=password
 ```
 
 ### 6. Run Migrations
-
+```bash
+sail artisan migrate:install
+```
 ```bash
 sail artisan migrate
 ```
