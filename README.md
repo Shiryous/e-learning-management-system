@@ -14,8 +14,7 @@ There are 3 entities inside the database:
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running
 - Git
-- Optional: [Composer](https://getcomposer.org/) if you're managing dependencies manually
-
+- Optional: [Composer](https://getcomposer.org/) 
 
 ## 🚀 Getting Started
 
@@ -34,8 +33,10 @@ cp .env.example .env
 
 ### 3. Start Laravel Sail (Docker)
 
-Install Sail if not installed yet (optional):
-
+Install PHP and Sail if not installed yet (optional):
+```bash
+sudo apt update && sudo apt install php-cli unzip curl git php-mbstring php-xml php-bcmath php-curl -y
+```
 ```bash
 composer install
 ```
