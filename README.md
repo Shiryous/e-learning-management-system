@@ -22,7 +22,7 @@ There are 3 entities inside the database:
 
 ```bash
 git clone https://github.com/Shiryous/e-learning-management-system.git
-cd e-learning-management-s
+cd e-learning-management-system
 ```
 
 ### 2. Copy the `.env` file
